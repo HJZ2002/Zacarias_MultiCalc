@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zacarias_MultiCalc</string>
+    <string-array name="numbers">
+        <item>Volume</item>
+        <item>Area</item>
+        <item>Acceleration</item>
+        <item>Kinetic</item>
+        <item>Mass</item>
+    </string-array>
+
+</resources>
