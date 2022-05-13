@@ -8,12 +8,15 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
+import com.example.zacarias_multicalc.Controller.Methods;
 import com.example.zacarias_multicalc.R;
 
 public class AreaActivity extends AppCompatActivity implements View.OnClickListener{
     Button next1,calculate2;
     EditText basetxt,heightxt;
+    TextView result2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
         basetxt=findViewById(R.id.base);
         heightxt=findViewById(R.id.areaheight);
         calculate2.setOnClickListener(this);
+        result2=findViewById(R.id.equals);
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +43,7 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-
+            case R.id.solve:
         }
     }
 }

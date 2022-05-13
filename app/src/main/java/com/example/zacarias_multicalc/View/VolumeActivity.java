@@ -17,6 +17,7 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
     Button next,calculate;
     EditText length,width,height;
     TextView lenghtxt,widthxt,heighttxt,resultxt;
+    double answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_volume);
         getSupportActionBar().hide();
+
         //setting id
         next =findViewById(R.id.Next);
         length=findViewById(R.id.lengthtxt);
@@ -33,7 +35,12 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
         lenghtxt=findViewById(R.id.length);
         widthxt=findViewById(R.id.widthtxt1);
         heighttxt=findViewById(R.id.Heightxt);
-        resultxt =findViewById(R.id.resultkey);{
+        resultxt =findViewById(R.id.resultkey);
+        Methods solve =new Methods();
+        double l =Double.parseDouble(lenghtxt.getText().toString());
+        double w =Double.parseDouble(widthxt.getText().toString());
+        double h =Double.parseDouble(heighttxt.getText().toString());
+        answer =solve.volumeA(l,w,h);{
         }
         calculate.setOnClickListener(this);
         next.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +51,13 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
     }
-
+    
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.calculate:
-                Methods solve =new Methods();
-                resultxt.setText(solve.volumeA(Double.parseDouble(lenghtxt.getText().toString()),Double.parseDouble(width.getText().toString()),Double.parseDouble(heighttxt.getText().toString()))
+                resultxt.setText("result"+answer);
+                break;
         }
     }
 }
