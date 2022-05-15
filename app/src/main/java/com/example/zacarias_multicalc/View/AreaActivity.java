@@ -49,7 +49,7 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
                 var1.setBase(Double.parseDouble(basetxt.getText().toString()));
                 var1.setHeight(Double.parseDouble(heightxt.getText().toString()));
                 double solve = methods.triangleArea(var1.getBase(), var1.getHeight());
-                result2.setText("Result: " + solve);
+                result2.setText("" + solve);
                 break;
             case R.id.nextwo:
                 Intent i2 = new Intent(AreaActivity.this, Kinetic.class);

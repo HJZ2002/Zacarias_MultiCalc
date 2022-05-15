@@ -24,6 +24,7 @@ public class Acceleration extends AppCompatActivity implements View.OnClickListe
     //Class
     Methods solvekey=new Methods();
     Variables var3=new Variables();
+    double solve2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +54,8 @@ public class Acceleration extends AppCompatActivity implements View.OnClickListe
             case R.id.resultgetters:
                 var3.setVelocity(Double.parseDouble(velocity.getText().toString()));
                 var3.setTime(Double.parseDouble(time.getText().toString()));
-                double solve2=solvekey.acceleration(var3.getVelocity(),var3.getTime());
-                resultanswer.setText("result"+solve2);
+                solve2=solvekey.acceleration(var3.getVelocity(),var3.getTime());
+                resultanswer.setText(""+solve2);
                 break;
 
             case R.id.Continue:

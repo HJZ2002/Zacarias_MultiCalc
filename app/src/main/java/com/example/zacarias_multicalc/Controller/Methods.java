@@ -27,13 +27,12 @@ public class Methods {
 
     //formula for mass
     public double mass(double volume, double density) {
-        return volume *density;
+        return volume*density;
     }
     // formula for acceleration
     public double acceleration(double time,double velocity){
-        return time /velocity;
+        return time/velocity;
     }
-
     //formula for kinetic
     public double kinetic(double mass ,double velocity){
         return (0.5 * (mass * (velocity * velocity)));

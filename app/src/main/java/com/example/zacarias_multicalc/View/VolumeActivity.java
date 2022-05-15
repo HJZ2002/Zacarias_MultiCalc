@@ -53,7 +53,7 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
                 variables.setHeight(Double.parseDouble(height.getText().toString()));
                 answer = solve.volumeA(variables.getLength(),variables.getWidth(),variables.getHeight());
 
-                resultxt.setText("result: " + answer);
+                resultxt.setText("" + answer);
                 break;
             case R.id.proceed:
                 Intent intent = new Intent(VolumeActivity.this,AreaActivity.class);

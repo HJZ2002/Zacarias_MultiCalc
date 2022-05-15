@@ -51,7 +51,7 @@ public class Kinetic extends AppCompatActivity implements View.OnClickListener {
                 var2.setSpeed(Double.parseDouble(speed.getText().toString()));
                 var2.setVelocity1(Double.parseDouble(velocity.getText().toString()));
                 double solve=numbers.kinetic(var2.getSpeed(), var2.getVelocity1());
-                result3.setText("result:"+solve);
+                result3.setText(""+solve);
                 break;
             case R.id.nextactivity:
                 Intent intent=new Intent(Kinetic.this,Acceleration.class);
