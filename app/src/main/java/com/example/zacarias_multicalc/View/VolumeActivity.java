@@ -21,7 +21,7 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
     TextView resultxt;
     double answer;
 
-    //Calling classes
+
     Methods solve = new Methods();
     Variables variables = new Variables();
 
@@ -32,8 +32,8 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_volume);
         getSupportActionBar().hide();
 
-        //setting id
-        next = findViewById(R.id.procceed);
+
+        next = findViewById(R.id.proceed);
         length = findViewById(R.id.lengthtxt);
         width = findViewById(R.id.widthtxt1);
         height = findViewById(R.id.Heightxt);
@@ -55,7 +55,7 @@ public class VolumeActivity extends AppCompatActivity implements View.OnClickLis
 
                 resultxt.setText("result: " + answer);
                 break;
-            case R.id.procceed:
+            case R.id.proceed:
                 Intent intent = new Intent(VolumeActivity.this,AreaActivity.class);
                 startActivity(intent);
                 break;

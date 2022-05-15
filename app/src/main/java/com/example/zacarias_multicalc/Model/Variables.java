@@ -120,14 +120,14 @@ public class Variables {
         return velocity;
     }
 
-    private double kinetic,Mass1,Velocity1;
+    private double kinetic,Speed,Velocity1;
     //setters kinetic
     public void setKinetic(double kinetic) {
         this.kinetic = kinetic;
     }
 
-    public void setMass1(double mass1) {
-        Mass1 = mass1;
+    public void setSpeed(double mass1) {
+        Speed = mass1;
     }
 
     public void setVelocity1(double velocity1) {
@@ -138,8 +138,8 @@ public class Variables {
         return kinetic;
     }
 
-    public double getMass1() {
-        return Mass1;
+    public double getSpeed() {
+        return Speed;
     }
 
     public double getVelocity1() {

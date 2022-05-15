@@ -33,6 +33,7 @@ public class Methods {
     public double acceleration(double time,double velocity){
         return time /velocity;
     }
+
     //formula for kinetic
     public double kinetic(double mass ,double velocity){
         return (0.5 * (mass * (velocity * velocity)));
