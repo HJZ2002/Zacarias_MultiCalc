@@ -47,8 +47,8 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.solve:
                 var1.setBase(Double.parseDouble(basetxt.getText().toString()));
-                var1.setHeight(Double.parseDouble(heightxt.getText().toString()));
-                double solve = methods.triangleArea(var1.getBase(), var1.getHeight());
+                var1.setHeight1(Double.parseDouble(heightxt.getText().toString()));
+                double solve = methods.triangleArea(var1.getBase(), var1.getHeight1());
                 result2.setText("" + solve);
                 break;
             case R.id.nextwo:
