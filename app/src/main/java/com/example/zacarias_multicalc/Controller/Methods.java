@@ -3,22 +3,11 @@ import java.lang.Math;
 
 public class Methods {
     // Formula For Volume
-    public double volumeL(double v, double r) {
-        return ((v) / ((Math.PI) * (r * r)));
-    }
-    public double volumeH(double r, double h) {
-        return ((Math.PI) * (r * r) * (h));
-    }
-    public double volumeR(double v, double h) {
-        return (Math.sqrt((v) / (Math.PI * h)));
-    }
     public double volumeA(double l, double w, double h) {
         return ((l * w * h) / 3);
     }
 
-
     //Formula for area
-
     public double triangleArea(double base, double height) {
         return ((0.5) * base * height);
     }
