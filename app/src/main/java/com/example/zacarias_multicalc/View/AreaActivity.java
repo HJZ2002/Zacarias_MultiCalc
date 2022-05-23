@@ -52,7 +52,7 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
                 result2.setText("" + solve);
                 break;
             case R.id.nextwo:
-                Intent i2 = new Intent(AreaActivity.this, Kinetic.class);
+                Intent i2 = new Intent(AreaActivity.this, AreaRectangle.class);
                 startActivity(i2);
                 break;
         }

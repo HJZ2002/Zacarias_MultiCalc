@@ -2,6 +2,7 @@ package com.example.zacarias_multicalc.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -15,7 +16,7 @@ import com.example.zacarias_multicalc.R;
 
 public class MassActivity extends AppCompatActivity implements View.OnClickListener {
     EditText force,Density;
-    Button solution;
+    Button solution,next;
     TextView forcetxt,densitytxt,resultkey;
     double solutionkey;
 
@@ -36,8 +37,10 @@ public class MassActivity extends AppCompatActivity implements View.OnClickListe
         forcetxt=findViewById(R.id.Force);
         densitytxt=findViewById(R.id.Acceleration);
         resultkey=findViewById(R.id.finalanswer);
+        next=findViewById(R.id.power);
 
         solution.setOnClickListener(this);
+        next.setOnClickListener(this);
     }
 
     @Override
@@ -48,6 +51,10 @@ public class MassActivity extends AppCompatActivity implements View.OnClickListe
                 var4.setDensity(Double.parseDouble(Density.getText().toString()));
                 solutionkey=methods.mass(var4.getVolume1(),var4.getDensity());
                 resultkey.setText(""+solutionkey);
+                break;
+            case R.id.power:
+                Intent intent=new Intent(MassActivity.this,Power.class);
+                startActivity(intent);
                 break;
         }
     }
