@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/solve1"
+        android:id="@+id/presscalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="352dp"

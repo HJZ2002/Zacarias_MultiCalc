@@ -32,7 +32,7 @@ public class Kinetic extends AppCompatActivity implements View.OnClickListener {
         nextwo = findViewById(R.id.nextactivity);
         speed=findViewById(R.id.problem);
         velocity=findViewById(R.id.problemtwo);
-        calculate=findViewById(R.id.solve1);
+        calculate=findViewById(R.id.presscalculate);
         result3=findViewById(R.id.answerkey);
         problem=findViewById(R.id.one);
         problemtwo=findViewById(R.id.two);
@@ -47,7 +47,7 @@ public class Kinetic extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.solve1:
+            case R.id.presscalculate:
                 var2.setSpeed(Double.parseDouble(speed.getText().toString()));
                 var2.setVelocity1(Double.parseDouble(velocity.getText().toString()));
                 double solve=numbers.kinetic(var2.getSpeed(), var2.getVelocity1());
